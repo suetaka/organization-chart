@@ -28,7 +28,8 @@
     display: flex; align-items: center; gap: 8px;
   }
   .slide-header h1 { font-size: 11pt; font-weight: 700; }
-  .slide-header .sub { font-size: 7.5pt; opacity: 0.85; margin-left: auto; }
+  .slide-header .sub { font-size: 7.5pt; opacity: 0.85; }
+  .slide-header .meta { font-size: 6.5pt; opacity: 0.75; margin-left: auto; white-space: nowrap; text-align: right; line-height: 1.5; }
   .badge  { background: #f0a500; color: #1a3a5c; font-size: 7pt; font-weight: 700; padding: 2px 7px; border-radius: 10px; white-space:nowrap;}
   .badge-red { background: #e74c3c; color: white; font-size: 7pt; font-weight: 700; padding: 2px 7px; border-radius: 10px; }
 
@@ -66,6 +67,13 @@
     .no-print { display:none; }
   }
 </style>
+<script>
+  const _d = new Date();
+  const _date = `${_d.getFullYear()}年${_d.getMonth()+1}月${_d.getDate()}日`;
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.meta').forEach(el => el.querySelector('.date').textContent = _date);
+  });
+</script>
 </head>
 <body>
 <div class="nav no-print"><button onclick="window.print()">🖨️ PDF印刷（A4横）</button></div>
@@ -76,6 +84,7 @@
     <h1>🚪 引合受付〜取引承認フロー【フロントゲート】</h1>
     <span class="badge">v4 新設</span>
     <span class="sub">製造可否判断 → 与信審査 → 稟議書決裁 → 見積へ</span>
+    <span class="meta"><span class="date"></span> 佳秀工業(株) 経営企画室 末永 powered by Claude</span>
   </div>
 
   <div style="display:flex; gap:10px; align-items:flex-start; height:calc(100% - 10mm);">
@@ -209,6 +218,7 @@
     <h1>🎯 見積ワークフロー全体概要【v4】</h1>
     <span class="badge">ヘルスケア事業部</span>
     <span class="sub">引合〜販売価格決定までの全体構造</span>
+    <span class="meta"><span class="date"></span> 佳秀工業(株) 経営企画室 末永 powered by Claude</span>
   </div>
 
   <div style="display:flex; gap:10px; height:calc(100% - 9mm);">
@@ -380,6 +390,7 @@
     <h1>🔴 新規顧客フロー（口座なし）【v4】</h1>
     <span class="badge">ルート A</span>
     <span class="sub">製造可否 → 与信審査 → 稟議書決裁 → 変動費見積 → 工数見積</span>
+    <span class="meta"><span class="date"></span> 佳秀工業(株) 経営企画室 末永 powered by Claude</span>
   </div>
 
   <div style="display:flex; gap:8px; height:calc(100% - 9mm);">
@@ -484,6 +495,7 @@
     <h1>🔵 既存顧客フロー（口座あり）【v4】</h1>
     <span class="badge">ルート B</span>
     <span class="sub">既存顧客も製造可否判断は必須 ／ 与信審査・稟議書決裁は不要</span>
+    <span class="meta"><span class="date"></span> 佳秀工業(株) 経営企画室 末永 powered by Claude</span>
   </div>
 
   <div style="background:#f0f4f8; border:2px solid #1a3a5c; border-radius:6px; padding:4px 10px; margin-bottom:4px; display:flex; align-items:center; gap:10px;">
@@ -642,6 +654,7 @@
     <h1>📊 システム必須管理項目【v4】</h1>
     <span class="badge">マスタ設計</span>
     <span class="sub">稟議書管理 ／ 製造可否記録 を追加</span>
+    <span class="meta"><span class="date"></span> 佳秀工業(株) 経営企画室 末永 powered by Claude</span>
   </div>
 
   <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:6px; margin-top:3px;">
