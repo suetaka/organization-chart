@@ -53,19 +53,16 @@
   .mi { font-size:6.5pt; padding:1.5px 0; border-bottom:1px solid rgba(0,0,0,0.06); display:flex; align-items:center; gap:4px; }
   .mi:last-child { border-bottom:none; }
 
-  /* 内示バナー */
   .naiji-banner {
     background: linear-gradient(135deg, #fff3cd, #ffe08a);
     border: 2.5px solid #d4890a;
     border-radius: 6px; padding: 4px 8px; text-align: center;
     font-size: 7pt; font-weight: 800; color: #7a4000;
   }
-  /* 稟議ブロック強調 */
   .ringi-block {
     background: #fdebd0; border: 3px solid #e67e22; border-radius: 7px;
     padding: 5px 8px; text-align: center;
   }
-  /* ロックバナー */
   .lock-banner {
     background: #fff0f0; border: 2px solid #c0392b; border-radius: 5px;
     padding: 3px 6px; font-size: 6pt; font-weight: 700; color: #7b0000; text-align: center;
@@ -100,7 +97,6 @@
     <span class="meta"><span class="date"></span> 佳秀工業(株) 経営企画室 末永 powered by Claude</span>
   </div>
 
-  <!-- 5フェーズ横並びタイムライン -->
   <div style="display:flex; gap:0; align-items:stretch; margin-bottom:5px; height:14mm;">
     <div style="flex:1; background:#4a0072; color:white; text-align:center; padding:5px 4px; border-radius:6px 0 0 6px; display:flex; flex-direction:column; justify-content:center;">
       <div style="font-size:8.5pt; font-weight:800;">① 商談</div>
@@ -114,7 +110,7 @@
     <div style="width:10px; background:linear-gradient(to right,#1a3a5c,#0e6655); display:flex; align-items:center; justify-content:center;"><span style="color:white; font-size:7pt;">▶</span></div>
     <div style="flex:1; background:#0e6655; color:white; text-align:center; padding:5px 4px; display:flex; flex-direction:column; justify-content:center;">
       <div style="font-size:8.5pt; font-weight:800;">③ 見積</div>
-      <div style="font-size:5.5pt; opacity:.85;">処方・変動費・工数・承認・発行</div>
+      <div style="font-size:5.5pt; opacity:.85;">処方・仕入費・工数・承認・発行</div>
     </div>
     <div style="width:10px; background:linear-gradient(to right,#0e6655,#d4890a); display:flex; align-items:center; justify-content:center;"><span style="color:white; font-size:7pt;">▶</span></div>
     <div style="flex:1.1; background:#d4890a; color:white; text-align:center; padding:5px 4px; display:flex; flex-direction:column; justify-content:center;">
@@ -130,7 +126,6 @@
 
   <div style="display:grid; grid-template-columns:1fr 4px 1fr 4px 1fr 4px 1.15fr 4px 1fr; gap:0; height:calc(100% - 32mm);">
 
-    <!-- フェーズ①商談 -->
     <div style="background:#faf5ff; border:2px solid #7b1fa2; border-radius:7px; padding:6px 7px; display:flex; flex-direction:column;">
       <div style="font-size:7pt; font-weight:800; color:#4a0072; border-bottom:2px solid #7b1fa2; padding-bottom:2px; margin-bottom:3px; text-align:center;">① 商談</div>
       <div style="background:#f0e8ff; border:1.5px solid #7b1fa2; border-radius:4px; padding:3px 5px; margin-bottom:2px; font-size:6pt; line-height:1.6; color:#4a0072;">
@@ -145,7 +140,6 @@
     </div>
     <div style="display:flex; align-items:center; justify-content:center;"><span style="font-size:12pt; color:#bbb;">▶</span></div>
 
-    <!-- フェーズ②引合 -->
     <div style="background:#f0f4f8; border:2px solid #1a3a5c; border-radius:7px; padding:6px 7px; display:flex; flex-direction:column;">
       <div style="font-size:7pt; font-weight:800; color:#1a3a5c; border-bottom:2px solid #1a3a5c; padding-bottom:2px; margin-bottom:3px; text-align:center;">② 引合受付</div>
       <div style="display:flex; flex-direction:column; gap:2px;">
@@ -158,7 +152,6 @@
     </div>
     <div style="display:flex; align-items:center; justify-content:center;"><span style="font-size:12pt; color:#bbb;">▶</span></div>
 
-    <!-- フェーズ③見積 -->
     <div style="background:#f0fff8; border:2px solid #0e6655; border-radius:7px; padding:6px 7px; display:flex; flex-direction:column;">
       <div style="font-size:7pt; font-weight:800; color:#0e6655; border-bottom:2px solid #0e6655; padding-bottom:2px; margin-bottom:3px; text-align:center;">③ 見積</div>
       <div style="display:flex; flex-direction:column; gap:2px; font-size:6pt;">
@@ -166,7 +159,7 @@
         <div class="ad">↓</div>
         <div style="background:white; border:1px solid #2980b9; border-radius:3px; padding:2px 4px; color:#1a3a5c;">処方受領 → 仮登録 → 品質確認 → 有効処方化</div>
         <div class="ad">↓</div>
-        <div style="background:white; border:1px solid #16a085; border-radius:3px; padding:2px 4px; color:#0e6655; font-weight:700;">🧮 変動費 一括見積</div>
+        <div style="background:white; border:1px solid #16a085; border-radius:3px; padding:2px 4px; color:#0e6655; font-weight:700;">🧮 仕入費 一括見積</div>
         <div class="ad">↓</div>
         <div style="background:white; border:1px solid #e74c3c; border-radius:3px; padding:2px 4px; color:#7b1a1a; font-weight:700;">⚙️ 工数見積（A・B・C工程）</div>
         <div class="ad">↓</div>
@@ -177,7 +170,6 @@
     </div>
     <div style="display:flex; align-items:center; justify-content:center;"><span style="font-size:12pt; color:#bbb;">▶</span></div>
 
-    <!-- フェーズ④稟議決裁 ★ここが核心 -->
     <div style="background:#fffbf0; border:3px solid #d4890a; border-radius:7px; padding:6px 7px; display:flex; flex-direction:column;">
       <div style="font-size:7pt; font-weight:800; color:#7a4000; border-bottom:2.5px solid #d4890a; padding-bottom:2px; margin-bottom:3px; text-align:center;">④ 稟議決裁</div>
       <div style="display:flex; flex-direction:column; gap:2px;">
@@ -205,7 +197,6 @@
     </div>
     <div style="display:flex; align-items:center; justify-content:center;"><span style="font-size:12pt; color:#bbb;">▶</span></div>
 
-    <!-- フェーズ⑤受注 -->
     <div style="background:#fff8f0; border:2px solid #b34000; border-radius:7px; padding:6px 7px; display:flex; flex-direction:column;">
       <div style="font-size:7pt; font-weight:800; color:#b34000; border-bottom:2px solid #b34000; padding-bottom:2px; margin-bottom:3px; text-align:center;">⑤ 受注</div>
       <div style="display:flex; flex-direction:column; gap:2px; font-size:6pt;">
@@ -220,7 +211,6 @@
     </div>
   </div>
 
-  <!-- 下部：重要ルール強調 -->
   <div style="margin-top:4px; background:#fff3cd; border:2.5px solid #d4890a; border-radius:6px; padding:5px 12px; display:flex; align-items:center; gap:12px;">
     <div style="font-size:10pt; font-weight:900; color:#7a4000; white-space:nowrap;">⚠️ 稟議決裁の鉄則</div>
     <div style="font-size:7pt; color:#7a4000; line-height:1.7;">
@@ -241,7 +231,6 @@
   </div>
 
   <div style="display:flex; gap:10px; height:calc(100% - 9mm);">
-    <!-- 左：新規顧客 -->
     <div style="flex:1; background:#faf5ff; border:2px solid #7b1fa2; border-radius:7px; padding:7px;">
       <div style="font-size:9pt; font-weight:800; color:#4a0072; text-align:center; border-bottom:2.5px solid #7b1fa2; padding-bottom:3px; margin-bottom:4px;">🆕 新規顧客ルート</div>
       <div style="display:flex; flex-direction:column; align-items:center; gap:0;">
@@ -279,7 +268,6 @@
       </div>
     </div>
 
-    <!-- 右：既存顧客 -->
     <div style="flex:1; background:#eef4ff; border:2px solid #1565c0; border-radius:7px; padding:7px;">
       <div style="font-size:9pt; font-weight:800; color:#1a3a5c; text-align:center; border-bottom:2.5px solid #1565c0; padding-bottom:3px; margin-bottom:4px;">🔄 既存顧客ルート</div>
       <div style="display:flex; flex-direction:column; align-items:center; gap:0;">
@@ -313,7 +301,6 @@
       </div>
     </div>
 
-    <!-- 右端：管理項目 -->
     <div style="width:85mm; display:flex; flex-direction:column; gap:6px;">
       <div style="background:#faf5ff; border:2px solid #7b1fa2; border-radius:7px; padding:7px;">
         <div style="font-size:8pt; font-weight:700; color:#4a0072; margin-bottom:4px;">📊 商談ステータス管理</div>
@@ -522,12 +509,16 @@
       <div class="ad">↓</div>
 
       <div style="width:100%; background:#e8f8f5; border:2px solid #16a085; border-radius:7px; padding:4px 8px; margin:1px 0;">
-        <div style="font-size:7.5pt; font-weight:700; color:#0e6655; text-align:center; margin-bottom:2px;">🧮 変動費 一括見積（基本的には全費目確定して工数見積に進むこと）</div>
+        <div style="font-size:7.5pt; font-weight:700; color:#0e6655; text-align:center; margin-bottom:2px;">🧮 仕入費 一括見積（基本的には全費目確定して工数見積に進むこと）</div>
         <div style="display:flex; gap:4px; justify-content:center; font-size:6.5pt; flex-wrap:wrap;">
           <span style="background:white; border:1px solid #16a085; border-radius:3px; padding:1px 5px; text-align:center;">🧪 原料費<br><span style="font-size:5.5pt;">支給/自給</span></span>
           <span style="background:white; border:1px solid #16a085; border-radius:3px; padding:1px 5px; text-align:center;">📦 包材費<br><span style="font-size:5.5pt;">支給/自給</span></span>
           <span style="background:white; border:1px solid #16a085; border-radius:3px; padding:1px 5px; text-align:center;">🗃️ 箱・段ボール<br><span style="font-size:5.5pt;">支給/自給</span></span>
           <span style="background:white; border:2px solid #c0392b; border-radius:3px; padding:1px 5px; color:#7b0000; font-weight:700; text-align:center;">🚚 運賃<br><span style="font-size:5.5pt;">客先持ち or 自社</span></span>
+        </div>
+        <div style="display:flex; justify-content:center; gap:8px; margin-top:3px; font-size:6pt; color:#0e6655;">
+          <span style="background:#d4edda; border:1px solid #27ae60; border-radius:3px; padding:1px 6px;">🔄 リピート材：マスタから選択</span>
+          <span style="background:#fff3cd; border:1px solid #f0a500; border-radius:3px; padding:1px 6px;">🆕 新規材：マスタ登録→承認→選択</span>
         </div>
       </div>
       <div class="ad">↓</div>
@@ -539,7 +530,7 @@
 
       <div style="width:100%; background:#f0f4f8; border:1.5px solid #1a3a5c; border-radius:6px; padding:3px 8px; margin:1px 0;">
         <div style="display:flex; align-items:center; justify-content:center; gap:2px; flex-wrap:wrap; font-size:6.5pt;">
-          <span style="background:#e8f8f5; border:1px solid #16a085; border-radius:3px; padding:1px 4px; color:#0e6655; font-weight:700;">変動費</span>
+          <span style="background:#e8f8f5; border:1px solid #16a085; border-radius:3px; padding:1px 4px; color:#0e6655; font-weight:700;">仕入費</span>
           <span>＋</span><span style="background:#fce4d6; border:1px solid #e74c3c; border-radius:3px; padding:1px 4px; color:#7b1a1a; font-weight:700;">直接労務費</span>
           <span>＝</span><span style="background:#ffe0b2; border:1px solid #e67e22; border-radius:3px; padding:1px 4px; color:#6d3500; font-weight:700;">限界原価</span>
           <span>＋</span><span style="background:#fce4d6; border:1px solid #e74c3c; border-radius:3px; padding:1px 4px; color:#7b1a1a; font-weight:700;">設備加工費</span>
@@ -561,7 +552,6 @@
       <div class="ad">↓</div>
       <div class="step issue" style="min-width:150px;">見積発行 → 顧客提出</div>
       <div class="ad">↓</div>
-      <!-- 内示→稟議の流れを明示 -->
       <div style="width:100%; background:#fff3cd; border:2.5px solid #d4890a; border-radius:6px; padding:3px 8px; margin:1px 0;">
         <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap; font-size:6.5pt; justify-content:center;">
           <span style="background:#d4890a; color:white; border-radius:3px; padding:1px 7px; font-weight:700;">📨 内示受領</span>
@@ -639,7 +629,6 @@
   </div>
 
   <div style="display:flex; gap:5px; height:calc(100% - 9mm);">
-    <!-- 列0：商談 -->
     <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:0;">
       <div style="font-size:6.5pt; font-weight:700; color:#4a0072; background:#f0e8ff; border-radius:3px; padding:1px 6px; margin-bottom:2px;">【商談】</div>
       <div class="step se" style="background:#4a0072; font-size:6pt; min-width:90px; padding:3px 8px;">START：商談（新規）</div>
@@ -655,7 +644,6 @@
 
     <div style="display:flex; align-items:center; padding-top:15px;"><span style="font-size:8pt; color:#ccc;">→</span></div>
 
-    <!-- 列1：フロントゲート -->
     <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:0;">
       <div style="font-size:6.5pt; font-weight:700; color:#1a3a5c; background:#e8edf2; border-radius:3px; padding:1px 6px; margin-bottom:2px;">【フロントゲート】</div>
       <div class="step sales" style="width:100%; font-size:6pt;">製造可否（営業）</div>
@@ -684,7 +672,6 @@
 
     <div style="display:flex; align-items:center; padding-top:15px;"><span style="font-size:8pt; color:#ccc;">→</span></div>
 
-    <!-- 列2：製品仕様書・処方 -->
     <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:0; padding-top:2px;">
       <div style="font-size:6.5pt; font-weight:700; color:#7d5a00; background:#fef9e7; border-radius:3px; padding:1px 6px; margin-bottom:2px;">【製品仕様書・処方】</div>
       <div style="background:#fef9e7; border:1.5px solid #f39c12; border-radius:4px; padding:2px 4px; width:100%; text-align:center; margin:1px 0; font-size:6pt; font-weight:700; color:#7d5a00;">📄 製品仕様書 取得・作成</div>
@@ -697,16 +684,23 @@
       <div class="ad">↓</div>
       <div class="step qual" style="width:100%; font-size:6pt;">有効処方化</div>
       <div class="ad">↓</div>
-      <div style="background:#e8f8f5; border:1.5px solid #16a085; border-radius:4px; padding:2px 4px; width:100%; margin:1px 0;">
-        <div style="font-size:6pt; font-weight:700; color:#0e6655; text-align:center; margin-bottom:1px;">🧮 変動費 一括見積</div>
-        <div style="font-size:5.5pt; line-height:1.5;">🧪原料 / 📦包材<br>🗃️箱段ボール / 🚚運賃</div>
-        <div style="font-size:5.5pt; color:#c0392b; font-weight:700;">⚠️ 基本的には全費目確定して工数見積へ</div>
+      <div style="background:#e8f8f5; border:2px solid #16a085; border-radius:5px; padding:3px 5px; width:100%; margin:1px 0;">
+        <div style="font-size:6pt; font-weight:700; color:#0e6655; text-align:center; margin-bottom:2px;">🧮 仕入費 一括見積<br><span style="font-size:5.5pt; font-weight:600; color:#c0392b;">⚠️ 基本的には全費目確定して工数見積へ</span></div>
+        <div style="display:flex; gap:2px; justify-content:center; flex-wrap:wrap; font-size:5.5pt; margin-bottom:2px;">
+          <span style="background:white; border:1px solid #16a085; border-radius:3px; padding:1px 3px; text-align:center;">🧪 原料費<br><span style="font-size:5pt;">支給/自給</span></span>
+          <span style="background:white; border:1px solid #16a085; border-radius:3px; padding:1px 3px; text-align:center;">📦 包材費<br><span style="font-size:5pt;">支給/自給</span></span>
+          <span style="background:white; border:1px solid #16a085; border-radius:3px; padding:1px 3px; text-align:center;">🗃️ 箱段ボール<br><span style="font-size:5pt;">支給/自給</span></span>
+          <span style="background:white; border:2px solid #c0392b; border-radius:3px; padding:1px 3px; color:#7b0000; font-weight:700; text-align:center;">🚚 運賃<br><span style="font-size:5pt;">客先持ち/自社</span></span>
+        </div>
+        <div style="display:flex; justify-content:center; gap:4px; font-size:5.5pt; color:#0e6655;">
+          <span style="background:#d4edda; border:1px solid #27ae60; border-radius:3px; padding:1px 4px;">🔄 リピート材：マスタ選択</span>
+          <span style="background:#fff3cd; border:1px solid #f0a500; border-radius:3px; padding:1px 4px;">🆕 新規材：登録→承認→選択</span>
+        </div>
       </div>
     </div>
 
     <div style="display:flex; align-items:center; padding-top:15px;"><span style="font-size:8pt; color:#ccc;">→</span></div>
 
-    <!-- 列3：工数見積〜発行 -->
     <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:0; padding-top:2px;">
       <div style="font-size:6.5pt; font-weight:700; color:#7b1a1a; background:#fff3f3; border-radius:3px; padding:1px 6px; margin-bottom:2px;">【工数見積〜発行】</div>
       <div style="display:flex; gap:3px; align-items:center; justify-content:center; width:100%; margin:2px 0;">
@@ -732,13 +726,10 @@
 
     <div style="display:flex; align-items:center; padding-top:15px;"><span style="font-size:8pt; color:#ccc;">→</span></div>
 
-    <!-- 列4：内示→稟議→受注 ★核心 -->
     <div style="flex:1.1; display:flex; flex-direction:column; align-items:center; gap:0; padding-top:2px;">
       <div style="font-size:6.5pt; font-weight:700; color:#7a4000; background:#fff3cd; border-radius:3px; padding:1px 6px; margin-bottom:2px; border:1px solid #d4890a;">【内示→稟議→受注】</div>
-
       <div class="naiji-banner" style="width:100%; font-size:6pt; padding:3px 4px;">📨 顧客から内示受領<br><span style="font-size:5.5pt; font-weight:600;">発注意向の意思表示</span></div>
       <div class="ad">↓</div>
-
       <div style="width:100%; background:#fdebd0; border:2.5px solid #e67e22; border-radius:5px; padding:4px 5px; margin:1px 0; text-align:center;">
         <div style="font-size:6.5pt; font-weight:800; color:#6d3500;">📋 GATE3：稟議書</div>
         <div style="font-size:5.5pt; color:#a04000; margin:1px 0;">作成（営業）→ 回覧（関係部署）<br>→ 決裁（専務/社長）</div>
@@ -748,10 +739,8 @@
         </div>
       </div>
       <div class="ad">↓</div>
-
       <div class="lock-banner" style="width:100%; font-size:5.5pt;">🔒 決裁完了まで<br>注文書受領ロック</div>
       <div class="ad">↓</div>
-
       <div style="background:#fff8f0; border:2px solid #b34000; border-radius:4px; padding:3px 4px; width:100%; text-align:center; font-size:6pt; font-weight:700; color:#7b2c00; margin:1px 0;">📬 注文書受領<br><span style="font-weight:400; font-size:5.5pt;">稟議決裁済確認</span></div>
       <div class="ad">↓</div>
       <div style="background:#fff8f0; border:1px solid #e67e22; border-radius:3px; padding:2px 4px; width:100%; font-size:5.5pt; color:#6d3500; text-align:center; margin:1px 0;">見積との照合確認</div>
@@ -806,10 +795,18 @@
         <div class="ad">↓</div>
         <div class="step qual" style="width:100%; background:#c8f7da; font-size:6pt;">品質確認・承認</div>
         <div class="ad">↓</div>
-        <div style="background:#e8f8f5; border:1px solid #16a085; border-radius:3px; padding:2px 3px; width:100%; margin:1px 0;">
-          <div style="font-size:6pt; font-weight:700; color:#0e6655; text-align:center;">🧮 変動費 一括見積</div>
-          <div style="font-size:5.5pt; line-height:1.4;">🧪原料／📦包材／🗃️箱段ボール／🚚運賃</div>
-          <div style="font-size:5.5pt; color:#c0392b; font-weight:600;">⚠️ 基本的には全費目確定して工数見積へ</div>
+        <div style="background:#e8f8f5; border:2px solid #16a085; border-radius:5px; padding:3px 4px; width:100%; margin:1px 0;">
+          <div style="font-size:6pt; font-weight:700; color:#0e6655; text-align:center; margin-bottom:2px;">🧮 仕入費 一括見積<br><span style="font-size:5.5pt; font-weight:600; color:#c0392b;">⚠️ 基本的には全費目確定して工数見積へ</span></div>
+          <div style="display:flex; gap:2px; justify-content:center; flex-wrap:wrap; font-size:5.5pt; margin-bottom:2px;">
+            <span style="background:white; border:1px solid #16a085; border-radius:3px; padding:1px 3px; text-align:center;">🧪 原料費<br><span style="font-size:5pt;">支給/自給</span></span>
+            <span style="background:white; border:1px solid #16a085; border-radius:3px; padding:1px 3px; text-align:center;">📦 包材費<br><span style="font-size:5pt;">支給/自給</span></span>
+            <span style="background:white; border:1px solid #16a085; border-radius:3px; padding:1px 3px; text-align:center;">🗃️ 箱段ボール<br><span style="font-size:5pt;">支給/自給</span></span>
+            <span style="background:white; border:2px solid #c0392b; border-radius:3px; padding:1px 3px; color:#7b0000; font-weight:700; text-align:center;">🚚 運賃<br><span style="font-size:5pt;">客先持ち/自社</span></span>
+          </div>
+          <div style="display:flex; justify-content:center; gap:3px; font-size:5.5pt; color:#0e6655;">
+            <span style="background:#d4edda; border:1px solid #27ae60; border-radius:3px; padding:1px 3px;">🔄 リピート材：マスタ選択</span>
+            <span style="background:#fff3cd; border:1px solid #f0a500; border-radius:3px; padding:1px 3px;">🆕 新規材：登録→承認→選択</span>
+          </div>
         </div>
         <div class="ad">↓</div>
         <div style="display:flex; gap:2px; align-items:center; justify-content:center; width:100%; margin:1px 0;">
@@ -845,9 +842,18 @@
         <div class="ad">↓</div>
         <div class="step sales" style="width:100%; font-size:6pt;">数量更新</div>
         <div class="ad">↓</div>
-        <div style="background:#e8f8f5; border:1px solid #16a085; border-radius:3px; padding:2px 3px; width:100%; margin:1px 0;">
-          <div style="font-size:6pt; font-weight:700; color:#0e6655; text-align:center;">🧮 変動費 再計算</div>
-          <div style="font-size:5.5pt; line-height:1.4;"><span class="shikyu">支給</span>¥0のまま　<span class="jikyuu">自給</span>マスタ更新<br>🚚 運賃 → <strong>毎回見積必須</strong></div>
+        <div style="background:#e8f8f5; border:2px solid #16a085; border-radius:5px; padding:3px 4px; width:100%; margin:1px 0;">
+          <div style="font-size:6pt; font-weight:700; color:#0e6655; text-align:center; margin-bottom:2px;">🧮 仕入費 再計算</div>
+          <div style="display:flex; gap:2px; justify-content:center; flex-wrap:wrap; font-size:5.5pt; margin-bottom:2px;">
+            <span style="background:white; border:1px solid #16a085; border-radius:3px; padding:1px 3px; text-align:center;">🧪 原料費<br><span style="font-size:5pt;">支給/自給</span></span>
+            <span style="background:white; border:1px solid #16a085; border-radius:3px; padding:1px 3px; text-align:center;">📦 包材費<br><span style="font-size:5pt;">支給/自給</span></span>
+            <span style="background:white; border:1px solid #16a085; border-radius:3px; padding:1px 3px; text-align:center;">🗃️ 箱段ボール<br><span style="font-size:5pt;">支給/自給</span></span>
+            <span style="background:white; border:2px solid #c0392b; border-radius:3px; padding:1px 3px; color:#7b0000; font-weight:700; text-align:center;">🚚 運賃<br><span style="font-size:5pt; font-weight:700;">毎回見積必須</span></span>
+          </div>
+          <div style="display:flex; justify-content:center; gap:3px; font-size:5.5pt; color:#0e6655;">
+            <span style="background:#d4edda; border:1px solid #27ae60; border-radius:3px; padding:1px 3px;"><span class="shikyu">支給</span> ¥0のまま</span>
+            <span style="background:#fff3cd; border:1px solid #f0a500; border-radius:3px; padding:1px 3px;"><span class="jikyuu">自給</span> マスタ更新</span>
+          </div>
         </div>
         <div class="ad">↓</div>
         <div class="step sys" style="width:100%; background:#bbdefb; border-color:#1565c0; font-size:6pt;">ロット再計算</div>
@@ -891,7 +897,19 @@
         <div class="ad">↓</div>
         <div style="background:#fef9e7; border:1px solid #f39c12; border-radius:3px; padding:2px; width:100%; text-align:center; font-size:6pt; font-weight:700; color:#7d5a00; margin:1px 0;">📄 製品仕様書 改訂・版数更新</div>
         <div class="ad">↓</div>
-        <div style="background:#e8f8f5; border:1px solid #16a085; border-radius:3px; padding:2px 3px; width:100%; margin:1px 0; font-size:5.5pt; color:#0e6655; font-weight:600; text-align:center;">🧮 変動費 影響費目の再見積</div>
+        <div style="background:#e8f8f5; border:2px solid #16a085; border-radius:5px; padding:3px 4px; width:100%; margin:1px 0;">
+          <div style="font-size:6pt; font-weight:700; color:#0e6655; text-align:center; margin-bottom:2px;">🧮 仕入費 影響費目の再見積<br><span style="font-size:5.5pt; font-weight:600; color:#c0392b;">⚠️ 基本的には全費目確定して工数見積へ</span></div>
+          <div style="display:flex; gap:2px; justify-content:center; flex-wrap:wrap; font-size:5.5pt; margin-bottom:2px;">
+            <span style="background:white; border:1px solid #16a085; border-radius:3px; padding:1px 3px; text-align:center;">🧪 原料費<br><span style="font-size:5pt;">支給/自給</span></span>
+            <span style="background:white; border:1px solid #16a085; border-radius:3px; padding:1px 3px; text-align:center;">📦 包材費<br><span style="font-size:5pt;">支給/自給</span></span>
+            <span style="background:white; border:1px solid #16a085; border-radius:3px; padding:1px 3px; text-align:center;">🗃️ 箱段ボール<br><span style="font-size:5pt;">支給/自給</span></span>
+            <span style="background:white; border:2px solid #c0392b; border-radius:3px; padding:1px 3px; color:#7b0000; font-weight:700; text-align:center;">🚚 運賃<br><span style="font-size:5pt;">客先持ち/自社</span></span>
+          </div>
+          <div style="display:flex; justify-content:center; gap:3px; font-size:5.5pt; color:#0e6655;">
+            <span style="background:#d4edda; border:1px solid #27ae60; border-radius:3px; padding:1px 3px;">🔄 リピート材：マスタ選択</span>
+            <span style="background:#fff3cd; border:1px solid #f0a500; border-radius:3px; padding:1px 3px;">🆕 新規材：登録→承認→選択</span>
+          </div>
+        </div>
         <div class="ad">↓</div>
         <div class="step cost" style="width:100%; font-size:6pt;">原価確定 → 利益確認</div>
         <div class="ad">↓</div>
@@ -951,11 +969,22 @@
     </div>
 
     <div style="border:2px solid #16a085; background:#e8f8f5; border-radius:7px; padding:6px;">
-      <div style="font-size:8pt; font-weight:700; color:#0e6655; margin-bottom:4px;">🧮 変動費費目管理</div>
-      <div class="mi"><span class="dot-sm" style="background:#16a085;"></span>費目区分（原料/包材/箱段ボール/運賃）</div>
-      <div class="mi"><span class="dot-sm" style="background:#16a085;"></span>支給区分フラグ（支給/自給/客先持ち）</div>
-      <div class="mi"><span class="dot-sm" style="background:#16a085;"></span>仕入先コード・見積番号・単価</div>
-      <div class="mi"><span class="dot-sm" style="background:#16a085;"></span>有効期限・前回単価・変動閾値</div>
+      <div style="font-size:8pt; font-weight:700; color:#0e6655; margin-bottom:4px;">🧮 仕入費マスタ管理</div>
+
+      <div style="font-size:7pt; font-weight:700; color:#0e6655; margin:3px 0 2px; border-bottom:1px solid #b2dfdb;">📦 材料・資材マスタ（品目ごとに登録）</div>
+      <div class="mi"><span class="dot-sm" style="background:#16a085;"></span>材料コード（自動採番）・材料名</div>
+      <div class="mi"><span class="dot-sm" style="background:#16a085;"></span>費目区分（原料／包材／箱段ボール／運賃／その他）</div>
+      <div class="mi"><span class="dot-sm" style="background:#16a085;"></span>支給区分フラグ（支給／自給／客先持ち）</div>
+      <div class="mi"><span class="dot-sm" style="background:#16a085;"></span>仕入先コード・仕入先名</div>
+      <div class="mi"><span class="dot-sm" style="background:#16a085;"></span>単価・単位・有効期限・前回単価</div>
+      <div class="mi"><span class="dot-sm" style="background:#16a085;"></span>単価変動閾値（%）・改定履歴</div>
+      <div class="mi"><span class="dot-sm" style="background:#f0a500;"></span>材料区分フラグ（<strong>リピート材</strong>／ <strong>新規材</strong>）</div>
+      <div class="mi"><span class="dot-sm" style="background:#2980b9;"></span>登録日・登録者・承認状態</div>
+
+      <div style="font-size:7pt; font-weight:700; color:#0e6655; margin:4px 0 2px; border-bottom:1px solid #b2dfdb;">🔄 見積時の選択ルール</div>
+      <div class="mi"><span class="dot-sm" style="background:#27ae60;"></span><strong>リピート材</strong>：マスタから検索・選択（単価自動反映）</div>
+      <div class="mi"><span class="dot-sm" style="background:#e67e22;"></span><strong>新規材</strong>：マスタ新規登録 → 承認後に選択可</div>
+      <div class="mi"><span class="dot-sm" style="background:#c0392b;"></span>マスタ未登録材は見積に使用不可（システムでブロック）</div>
       <div class="mi"><span class="dot-sm" style="background:#c0392b;"></span>全費目確定フラグ（ゲートチェック用）</div>
     </div>
 
@@ -982,7 +1011,7 @@
     <div style="flex:1.5; background:#f0f4f8; border-radius:7px; padding:5px 10px;">
       <div style="font-size:8pt; font-weight:700; color:#1a3a5c; margin-bottom:3px;">📐 原価積上げ構造（確定版）</div>
       <div style="display:flex; align-items:center; gap:2px; flex-wrap:wrap; font-size:6.5pt;">
-        <div style="background:#e8f8f5; border:1px solid #16a085; border-radius:3px; padding:1px 5px; color:#0e6655; font-weight:600; text-align:center; line-height:1.4;">変動費合計<br><span style="font-size:5.5pt;">原料＋包材＋箱段ボール＋運賃</span></div>
+        <div style="background:#e8f8f5; border:1px solid #16a085; border-radius:3px; padding:1px 5px; color:#0e6655; font-weight:600; text-align:center; line-height:1.4;">仕入費合計<br><span style="font-size:5.5pt;">原料＋包材＋箱段ボール＋運賃</span></div>
         <span class="arr">＋</span>
         <div style="background:#fce4d6; border:1px solid #e74c3c; border-radius:3px; padding:1px 5px; color:#7b1a1a; font-weight:600; text-align:center; line-height:1.4;">直接労務費<br><span style="font-size:5.5pt;">マンレート×作業時間</span></div>
         <span class="arr">＝</span>
