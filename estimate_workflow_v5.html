@@ -177,11 +177,18 @@
     </div>
     <div style="display:flex; align-items:center; justify-content:center;"><span style="font-size:12pt; color:#bbb;">▶</span></div>
 
-    <!-- フェーズ④内示→稟議 ★ここが核心 -->
+    <!-- フェーズ④稟議決裁 ★ここが核心 -->
     <div style="background:#fffbf0; border:3px solid #d4890a; border-radius:7px; padding:6px 7px; display:flex; flex-direction:column;">
-      <div style="font-size:7pt; font-weight:800; color:#7a4000; border-bottom:2.5px solid #d4890a; padding-bottom:2px; margin-bottom:3px; text-align:center;">④ 内示 → 稟議決裁</div>
+      <div style="font-size:7pt; font-weight:800; color:#7a4000; border-bottom:2.5px solid #d4890a; padding-bottom:2px; margin-bottom:3px; text-align:center;">④ 稟議決裁</div>
       <div style="display:flex; flex-direction:column; gap:2px;">
-        <div class="naiji-banner">📨 顧客から内示受領<br><span style="font-size:5.5pt; font-weight:600;">「発注する意向あり」の意思表示</span></div>
+        <div style="background:#fff3cd; border:1.5px solid #d4890a; border-radius:5px; padding:4px 6px; font-size:6pt; color:#7a4000; line-height:1.7;">
+          以下のいずれかが発生するタイミングで稟議書を作成・回覧・決裁する：<br>
+          ・<strong>内示受領</strong><br>
+          ・<strong>見積書の顧客提出</strong><br>
+          ・<strong>基本契約書の締結</strong><br>
+          ・<strong>機密保持契約書（NDA）の締結</strong><br>
+          ・その他、取引を正式に進める重要なアクション
+        </div>
         <div class="ad">↓</div>
         <div class="ringi-block">
           <div style="font-size:7pt; font-weight:800; color:#6d3500; margin-bottom:2px;">📋 GATE 3：稟議書 作成・回覧・決裁</div>
@@ -217,9 +224,8 @@
   <div style="margin-top:4px; background:#fff3cd; border:2.5px solid #d4890a; border-radius:6px; padding:5px 12px; display:flex; align-items:center; gap:12px;">
     <div style="font-size:10pt; font-weight:900; color:#7a4000; white-space:nowrap;">⚠️ 稟議決裁の鉄則</div>
     <div style="font-size:7pt; color:#7a4000; line-height:1.7;">
-      <strong>内示受領 → GATE3 稟議決裁 → 決裁済 → 注文書受領</strong>　の順番を厳守。
-      取引してよい決裁が下りるまで注文書を受領してはならない。
-      内示の段階でシステムが稟議書作成を要求し、決裁完了前は注文書受領をロックする。
+      内示受領・見積提出・基本契約書や機密保持契約書（NDA）の締結など、<strong>取引を正式に進める重要なアクションが発生するタイミングで稟議書を作成・回覧・決裁する。</strong>
+      取引してよい決裁が下りるまで注文書を受領してはならない。決裁完了前は注文書受領をシステム上でロックする。
     </div>
   </div>
 </div>
@@ -388,9 +394,13 @@
 
       <div class="step se" style="min-width:160px; background:#27ae60;">与信審査通過 → 見積フローへ</div>
 
-      <div style="margin-top:6px; width:100%; background:#fff3cd; border:2px dashed #d4890a; border-radius:5px; padding:4px 8px; text-align:center; font-size:6.5pt; color:#7a4000; font-weight:700;">
-        📋 GATE3 稟議書決裁は <u>内示受領後（フェーズ④）</u> に実施<br>
-        <span style="font-weight:400; font-size:6pt;">見積提出 → 顧客から内示 → 稟議決裁 → 決裁済 → 注文書受領</span>
+      <div style="margin-top:6px; width:100%; background:#fff3cd; border:2px dashed #d4890a; border-radius:5px; padding:4px 8px; font-size:6.5pt; color:#7a4000; font-weight:700;">
+        📋 GATE3 稟議書決裁のタイミング：<br>
+        <span style="font-weight:400; font-size:6pt; line-height:1.8;">
+          内示受領・見積書の顧客提出・基本契約書や機密保持契約書（NDA）の締結など、<br>
+          取引を正式に進める重要なアクションが発生する際に稟議書を作成・回覧・決裁する。<br>
+          決裁が下りるまで注文書を受領しない。
+        </span>
       </div>
     </div>
 
